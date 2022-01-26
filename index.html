@@ -1,43 +1,43 @@
 <!DOCTYPE html>
 <html>
 
-<!---- There is a required structure to all HTML documents.
+<!----------------------- There is a required structure to all HTML documents. -------------------
 
 They all start with the declaration <!DOCTYPE html> which tells the browser that we are using the latest version of HTML5 and helps to ensure your webpage displays correctly when visited from different browsers. The doctype declaration must be the absolute first line of your HTML document; not even comments or spaces can come before the doctype.
 
 Following the document type declaration, the <html> element signifies the beginning of the document, and all the code we write will go inside the <html> element.
-Everything else is nested within either the <head> or the <body>. -->
+Everything else is nested within either the <head> or the <body>. ---------------------------------------->
 
 
 <head> 
 
-<!--- The <head> provides additional data to the browser that won’t be displayed on the main page, such as the document <title> (which you’ll see on the title bar in the browser window and on the search engines), <link> to any external files (like your CSS or Javascript), and any <meta> for other metadata. --> 
+<!---------------------- The <head> provides additional data to the browser that won’t be displayed on the main page, such as the document <title> (which you’ll see on the title bar in the browser window and on the search engines), <link> to any external files (like your CSS or Javascript), and any <meta> for other metadata. ----------------------------------------> 
 
     <title> Ryan Inglis - Music Page </title>
 
-    <!---- This is where Gridlex and Google Fonts etc. goes -->
+    <!------------------- This is where Gridlex and Google Fonts etc. goes --------------------->
 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
     <!---- Important: given the rule of the cascade - where the browser reads the stylesheet from top to bottom - any external file that has something to do with your stylesheet (i.e. Google Fonts or Gridlex) will need to be linked above your custom CSS file. That way your custom CSS will override the styles in those external resources as the browser reads it the last.  -->
 
     <link rel="stylesheet" href="/style.css">
 </head>
 
-<!----- The <body> element contains the actual content of the website - everything you see in the browser. -->
+<!-------------------- The <body> element contains the actual content of the website - everything you see in the browser. ------------------>
 
 <body> 
 
-<!-- Header Banner -->
+<!---------------------------------------- Header Banner ---------------------------------------->
 <header>
     <h1>Ryan Inglis </h1>
     <h2> - Gitarrenschule München -  </h2>
 </header>
 
-<!-- Features Section -->
+<!---------------------------------------- Features Section ---------------------------------------->
 <section>
 
-<!-- Text & Photo -->
-
+<!--------------------- Text & Photo --------------------->
     <div"> 
         <h2> Billingualer Gitarrenunterricht auf Englisch </h2>
         <p> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quaerat aut dolore at quia ab, repudiandae officia beatae omnis ea, distinctio praesentium deserunt blanditiis voluptatibus sunt! Adipisci quae dignissimos ipsam reiciendis! </p>
@@ -46,7 +46,7 @@ Everything else is nested within either the <head> or the <body>. -->
         <!--- background image guitar-->
     </div>
 
-    <!--- Photo & Text -->
+    <!---------------------- Photo & Text --------------------->
     <div> 
        <h2> Privater Gitarrenlehrer direkt am Hohenzollernplatz in Schwabing </h2>
         <p> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolor velit dignissimos harum aspernatur fugiat! Aspernatur, atque porro! Iure odit commodi cumque nemo consectetur, sequi quibusdam nulla earum reprehenderit accusantium suscipit! </p>
@@ -55,9 +55,41 @@ Everything else is nested within either the <head> or the <body>. -->
         <!--- background image --> 
     </div>
 
-    
+</section>
+
+<!---------------------------------------- Featured Icon Grid ---------------------------------------->
+
+<section>
+    <div> 
+        <h2> Private Gitarrenstunden und Gruppenkurse die dich weiter bringen.   </h2>
+    </div>
+    <div>
+        <i class="fa-solid fa-guitar"></i>
+        <p> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Velit exercitationem officiis voluptate voluptas eos corrupti inventore sint aspernatur nostrum similique, eius qui. Labore odio cupiditate rerum itaque, omnis a vel. </p>
+    </div>
+    <div>
+        <i class="fa-solid fa-guitar"></i>
+        <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae cupiditate eligendi possimus magni commodi minima expedita mollitia reprehenderit at laborum sapiente est obcaecati, inventore modi. Rerum, distinctio autem! Vel, eaque?</p>
+    </div>
+    <div> 
+        <i class="fa-solid fa-guitar"></i>
+        <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat ullam beatae repellendus suscipit laboriosam ratione voluptatem quaerat alias, iste deleniti animi explicabo omnis quibusdam maxime soluta numquam nemo molestias cumque? </p>
+</div>
+<div> 
+    <i class="fa-solid fa-guitar"></i>
+    <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat ullam beatae repellendus suscipit laboriosam ratione voluptatem quaerat alias, iste deleniti animi explicabo omnis quibusdam maxime soluta numquam nemo molestias cumque? </p>
+</div>
+
+<!-------------------- Strukturiert, Zielorientiert, Jahrelange Erahrung, ------------------------------>
 
 </section>
+
+<!---------------------------------------- Image Banner ---------------------------------------->
+
+<section>
+    <h3> </h3>
+</section>
+
 
 
 
