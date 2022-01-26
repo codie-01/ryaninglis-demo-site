@@ -1,17 +1,29 @@
 <!DOCTYPE html>
 <html>
-    
+
+<!---- There is a required structure to all HTML documents.
+
+They all start with the declaration <!DOCTYPE html> which tells the browser that we are using the latest version of HTML5 and helps to ensure your webpage displays correctly when visited from different browsers. The doctype declaration must be the absolute first line of your HTML document; not even comments or spaces can come before the doctype.
+
+Following the document type declaration, the <html> element signifies the beginning of the document, and all the code we write will go inside the <html> element.
+Everything else is nested within either the <head> or the <body>. -->
+
+
 <head> 
+
+<!--- The <head> provides additional data to the browser that won’t be displayed on the main page, such as the document <title> (which you’ll see on the title bar in the browser window and on the search engines), <link> to any external files (like your CSS or Javascript), and any <meta> for other metadata. --> 
+
     <title> Ryan Inglis - Music Page </title>
 
     <!---- This is where Gridlex and Google Fonts etc. goes -->
 
 
-    <!---- Our custom stylesheet has always to come AFTER external sources -->
+    <!---- Important: given the rule of the cascade - where the browser reads the stylesheet from top to bottom - any external file that has something to do with your stylesheet (i.e. Google Fonts or Gridlex) will need to be linked above your custom CSS file. That way your custom CSS will override the styles in those external resources as the browser reads it the last.  -->
+
     <link rel="stylesheet" href="/style.css">
 </head>
 
-<!----- This is where our website starts -->
+<!----- The <body> element contains the actual content of the website - everything you see in the browser. -->
 
 <body> 
     <h1> Music Page of Ryan Inglis </h1>
