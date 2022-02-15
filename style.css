@@ -46,6 +46,9 @@ html {
 .tall-90        { min-height: 90vh;     }
 .tall-100       { min-height: 100vh;    }
 
+.bold-font           {  font-weight: 800;  }
+.light-font          {  font-weight: 200;  }
+
 
             /* Font */
 
@@ -57,17 +60,18 @@ font-family: 'EB Garamond', serif; /*
 /* Header styles */
 
 header {
-    background-image: url('/images/3Artists_Only_Human.jpg');
+    background-image: url('/images/Munich_Musicvideo1.jpg');
     background-size: cover;
     background-position: center;
     color: rgb(255, 255, 255);
 }
 
-/*I want the background-color to end with the word, but display: flex; - or item-align: flex-end;  doesn't work*/
-span {
+/*I want the background-color to end with the word, but display: flex; - or item-align: flex-end;  doesn't work; edit: now it does :) */
+.text-bg {
     background-color: rgba(25, 43, 55, 0.5);
-    padding: 0.5rem;
-    display:block;
+    display:flex-end;
+    /* not sure if I even need/can use line-height with "display: flex-end" */
+    line-height: 1;
   }
 
   header h2 {
