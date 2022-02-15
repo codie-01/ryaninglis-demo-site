@@ -6,14 +6,14 @@
     box-sizing: border-box;
 }
 
-/* Temporary styles for structural html */
-
+/* ----- Temporary styles for structural html -----------
 * {
     padding: 0.5rem;
     border: 1px solid rgb(225,225,225);}
+ ------------------------------------------------------ */
+
 
 body { border: none; }
-
 
 html { 
     border: none; 
@@ -21,7 +21,7 @@ html {
     color: #192B37;
 }
 
-
+/* -----------------------------------------------------------------*/
 
 /* Image-Styles */
 .bg-image { 
@@ -42,20 +42,20 @@ html {
 .text-right     { text-align: right;    }
 .text-center    { text-align: center;   }
 
-.tall-80        {  min-height: 80vh;    }
+.tall-80        { min-height: 80vh;     }
 .tall-90        { min-height: 90vh;     }
 .tall-100       { min-height: 100vh;    }
 
+
+
+            /* Typography & Font Utility Classes */
+
+            /* font-family: 'EB Garamond', serif; 400, 500, 600, 700 
+            font-family: 'Catamaran', sans-serif; 200, 400, 500, 800 --- */
+
+/* Catamaran Font */
 .bold-font           {  font-weight: 800;  }
 .light-font          {  font-weight: 200;  }
-
-
-            /* Font */
-
-            /* font-family: 'EB Garamond', serif; 400, 500, 600, 700 - Catamaran 200,400,500,800
-            font-family: 'Catamaran', sans-serif;
-font-family: 'EB Garamond', serif; /*
-
 
 /* Header styles */
 
@@ -66,14 +66,30 @@ header {
     color: rgb(255, 255, 255);
 }
 
-/*I want the background-color to end with the word, but display: flex; - or item-align: flex-end;  doesn't work; edit: now it does :) */
-.text-bg {
-    background-color: rgba(25, 43, 55, 0.5);
-    display:flex-end;
-    /* not sure if I even need/can use line-height with "display: flex-end" */
-    line-height: 1;
+h1 {
+    font-family: 'EB Garamond', serif;
+    font-size: 3rem;
+    font-weight: 400;
+    line-height: 1.1;
+    margin-bottom: 0.5rem;
+    letter-spacing: 0.1em;
   }
 
-  header h2 {
-      font-size: 3rem;
+  .span-bg {
+    display: block;
+    margin-bottom: 5px;
+    padding: 0.5rem;
+    background-color: rgba(25, 43, 55, 0.5);
   }
+
+  h2 {
+    margin-bottom: 0.5rem;
+}
+
+header h2 {
+    letter-spacing: 0.05em;
+}
+
+p {
+    font-weight: 200;
+}
