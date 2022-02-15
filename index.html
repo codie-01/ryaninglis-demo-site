@@ -19,6 +19,14 @@ Everything else is nested within either the <head> or the <body>. --------------
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/gridlex/2.7.1/gridlex.min.css">
+
+
+
+<link rel="preconnect" href="https://fonts.googleapis.com"> 
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+<link href="https://fonts.googleapis.com/css2?family=Catamaran:wght@200;400;500;800&family=EB+Garamond:ital,wght@0,400;0,500;0,600;0,800;1,400;1,500;1,600;1,800&display=swap" rel="stylesheet">
+
     <!---- Important: given the rule of the cascade - where the browser reads the stylesheet from top to bottom - any external file that has something to do with your stylesheet (i.e. Google Fonts or Gridlex) will need to be linked above your custom CSS file. That way your custom CSS will override the styles in those external resources as the browser reads it the last.  -->
 
     <link rel="stylesheet" href="/style.css">
@@ -29,68 +37,98 @@ Everything else is nested within either the <head> or the <body>. --------------
 <body> 
 
 <!---------------------------------------- Header Banner ---------------------------------------->
-<header>
-    <h1>Ryan Inglis </h1>
-    <h2> - Gitarrenschule München -  </h2>
+<header class="padded grid">
+    <div class="col-12-middle">
+        <h1>Ryan Inglis </h1>
+        <h2> - Gitarrenschule München -  </h2>
+    </div>
 </header>
 
 <!---------------------------------------- Features Section ---------------------------------------->
-<section>
+<section class="grid">
 
 <!--------------------- Text & Photo --------------------->
-    <div"> 
+    <div class="padded col-6"> 
         <h2> Billingualer Gitarrenunterricht auf Englisch </h2>
         <p> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quaerat aut dolore at quia ab, repudiandae officia beatae omnis ea, distinctio praesentium deserunt blanditiis voluptatibus sunt! Adipisci quae dignissimos ipsam reiciendis! </p>
     </div>
-    <div class="bg-image"> 
+    <div class="bg-image col-6"> 
         <!--- background image guitar-->
     </div>
 
     <!---------------------- Photo & Text --------------------->
-    <div> 
+    <div class="bg-image col-6">
+    <!--- background image --> 
+    </div>
+    <div class="padded col-6"> 
        <h2> Privater Gitarrenlehrer direkt am Hohenzollernplatz in Schwabing </h2>
         <p> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolor velit dignissimos harum aspernatur fugiat! Aspernatur, atque porro! Iure odit commodi cumque nemo consectetur, sequi quibusdam nulla earum reprehenderit accusantium suscipit! </p>
-    </div>
-    <div class="bg-image">
-        <!--- background image --> 
     </div>
 
 </section>
 
 <!---------------------------------------- Featured Icon Grid ---------------------------------------->
 
-<section>
-    <div> 
+<section class="padded grid bg-dark">
+    <div class="padded-1 col-12"> 
         <h2> Private Gitarrenstunden und Gruppenkurse die dich weiter bringen.   </h2>
     </div>
-    <div>
+    <div class="padded-1 col-3">
         <i class="fa-solid fa-guitar"></i>
         <p> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Velit exercitationem officiis voluptate voluptas eos corrupti inventore sint aspernatur nostrum similique, eius qui. Labore odio cupiditate rerum itaque, omnis a vel. </p>
     </div>
-    <div>
+    <div class="padded-1 col-3">
         <i class="fa-solid fa-guitar"></i>
         <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae cupiditate eligendi possimus magni commodi minima expedita mollitia reprehenderit at laborum sapiente est obcaecati, inventore modi. Rerum, distinctio autem! Vel, eaque?</p>
     </div>
-    <div> 
+    <div class="padded-1 col-3"> 
         <i class="fa-solid fa-guitar"></i>
         <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat ullam beatae repellendus suscipit laboriosam ratione voluptatem quaerat alias, iste deleniti animi explicabo omnis quibusdam maxime soluta numquam nemo molestias cumque? </p>
 </div>
-<div> 
-    <i class="fa-solid fa-guitar"></i>
+<div class="padded-1"> 
+    <i class="fa-solid fa-guitar col-3"></i>
     <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat ullam beatae repellendus suscipit laboriosam ratione voluptatem quaerat alias, iste deleniti animi explicabo omnis quibusdam maxime soluta numquam nemo molestias cumque? </p>
 </div>
-
-<!-------------------- Strukturiert, Zielorientiert, Jahrelange Erahrung, ------------------------------>
-
+<!--- Text: Strukturiert, Zielorientiert, Jahrelange Erahrung, ----->
 </section>
 
 <!---------------------------------------- Image Banner ---------------------------------------->
 
-<section>
-    <h3> </h3>
+<section class="padded">
+    <h3> never underestimate the power of a good night sleep </h3>
 </section>
 
+<!------------------------------------- Testimonial Section ------------------------------------>
 
+<section class="padded grid"> 
+    <div class="col-1">
+        <span>"</span> 
+    </div>
+    <div class="col-10"> 
+        <p> With all the free sources there I have tried teaching myself. It was very time-consuming to do all the research myself. You find a lot of wrong tabulatures out there and at some point I was really stuck that I lost my motivation. When I started taking lessons with Ryan I noticed all the bad habits I had developed while learning without guidance. I can only recommend Ryan, he is very patient and available to give feedback pretty much straight away.</p>
+        <p> - A very happy guitar student </p>
+    </div>
+    <div class="col-1"> 
+        <span>"</span>
+    </div>
+</section>
+
+<!------------------------------------------- Footer ----------------------------------------->
+<!------------------------- Footer: grid-spaceBetween !!! It only works with a capital B?!? ---------->
+
+<footer class="padded grid-spaceBetween bg-dark">
+    <div class="col-4">
+        <h2> let's connect </h2>
+        <p> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ullam atque nulla maiores libero voluptates repudiandae suscipit rem? Nam, deleniti inventore. Similique iste a enim, dolore velit deleniti laboriosam ab ea. </p>
+    </div>
+    <div class="col-6"> 
+        <p> WhatsApp/Telegram: +49 176 6655 1880</p>
+        <p> Email: guitarlessons@ryaninglis.com </p>
+        <p> Address: Schwabing-West, Munich, Germany, European Union</p>
+        <p> Instagram: https:/www.instagram.com/ryanaoinglis </p>
+        <p> Facebook: https:/www.facebook.com/ryanaoinglismusic </p>
+    </div>
+</footer>
 
 
 </body>

@@ -13,7 +13,15 @@
     border: 1px solid rgb(225,225,225);}
 
 body { border: none; }
-html { border: none; }
+
+
+html { 
+    border: none; 
+    font-family: 'Catamaran', sans-serif;
+    color: #192B37;
+}
+
+
 
 /* Image-Styles */
 .bg-image { 
@@ -21,3 +29,23 @@ html { border: none; }
     background-size: cover;
     min-height: 10rem;
 }
+
+/* Universal styles & utility classes */
+.padded     {   padding: 5%;    }
+.padded-1  {    padding: 1rem;  }
+
+.bg-dark    {   background-color: #192B37;
+                color: white;
+            }
+
+.text-left      { text-align: left;     }
+.text-right     { text-align: right;    }
+.text-center    { text-align: center;   }
+
+
+
+            /* Font */
+
+            /* font-family: 'EB Garamond', serif; 400, 500, 600, 700 - Catamaran 200,400,500,800
+            font-family: 'Catamaran', sans-serif;
+font-family: 'EB Garamond', serif; /*
