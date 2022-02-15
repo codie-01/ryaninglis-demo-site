@@ -57,7 +57,7 @@ font-family: 'EB Garamond', serif; /*
 /* Header styles */
 
 header {
-    background-image: url('/images/3Artists_Teacher.jpg');
+    background-image: url('/images/3Artists_Only_Human.jpg');
     background-size: cover;
     background-position: center;
     color: rgb(255, 255, 255);
@@ -72,11 +72,4 @@ span {
 
   header h2 {
       font-size: 3rem;
-  }
-
-  /* I want to add a line-height of 1 but it doesn't work */
-
-  header h1 {
-    align-items: flex-end;
-    align-items: center;
   }
