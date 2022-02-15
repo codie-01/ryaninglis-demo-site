@@ -60,12 +60,23 @@ header {
     background-image: url('/images/3Artists_Teacher.jpg');
     background-size: cover;
     background-position: center;
-    color: white;
+    color: rgb(255, 255, 255);
 }
 
-/*not sure if this will work*/
+/*I want the background-color to end with the word, but display: flex; - or item-align: flex-end;  doesn't work*/
 span {
-    background-color: rgba(200,20,20,0.5);
+    background-color: rgba(25, 43, 55, 0.5);
     padding: 0.5rem;
     display:block;
+  }
+
+  header h2 {
+      font-size: 3rem;
+  }
+
+  /* I want to add a line-height of 1 but it doesn't work */
+
+  header h1 {
+    align-items: flex-end;
+    align-items: center;
   }
