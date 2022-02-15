@@ -57,6 +57,10 @@ html {
 .bold-font           {  font-weight: 800;  }
 .light-font          {  font-weight: 200;  }
 
+.yellow             {   color: #FFBE00;}
+
+
+
 /* Header styles */
 
 header {
@@ -67,9 +71,9 @@ header {
 }
 
 h1 {
-    font-family: 'EB Garamond', serif;
+    font-family: 'Catamaran', sans-serif;
     font-size: 3rem;
-    font-weight: 400;
+    font-weight: 600;
     line-height: 1.1;
     margin-bottom: 0.5rem;
     letter-spacing: 0.1em;
@@ -82,14 +86,17 @@ h1 {
     background-color: rgba(25, 43, 55, 0.5);
   }
 
-  h2 {
-    margin-bottom: 0.5rem;
-}
-
-header h2 {
+ 
+h3 {
     letter-spacing: 0.05em;
 }
 
 p {
     font-weight: 200;
+    margin-bottom: 1rem;
+    margin-top: 0.8rem;
+}
+
+p:last-child {
+    margin-bottom: 0;
 }
