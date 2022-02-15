@@ -42,6 +42,10 @@ html {
 .text-right     { text-align: right;    }
 .text-center    { text-align: center;   }
 
+.tall-80        {  min-height: 80vh;    }
+.tall-90        { min-height: 90vh;     }
+.tall-100       { min-height: 100vh;    }
+
 
 
             /* Font */
@@ -49,3 +53,12 @@ html {
             /* font-family: 'EB Garamond', serif; 400, 500, 600, 700 - Catamaran 200,400,500,800
             font-family: 'Catamaran', sans-serif;
 font-family: 'EB Garamond', serif; /*
+
+
+/* Header styles */
+
+header {
+    background-image: url('/images/Songslam_ca2016.jpg');
+    background-size: cover;
+    background-position: center;
+}
