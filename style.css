@@ -47,7 +47,6 @@ html {
 .tall-100       { min-height: 100vh;    }
 
 
-
             /* Font */
 
             /* font-family: 'EB Garamond', serif; 400, 500, 600, 700 - Catamaran 200,400,500,800
@@ -58,7 +57,15 @@ font-family: 'EB Garamond', serif; /*
 /* Header styles */
 
 header {
-    background-image: url('/images/Songslam_ca2016.jpg');
+    background-image: url('/images/3Artists_Teacher.jpg');
     background-size: cover;
     background-position: center;
+    color: white;
 }
+
+/*not sure if this will work*/
+span {
+    background-color: rgba(200,20,20,0.5);
+    padding: 0.5rem;
+    display:block;
+  }
