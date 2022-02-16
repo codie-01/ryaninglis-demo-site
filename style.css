@@ -58,6 +58,8 @@ body {
 .medium-text        {   font-size: 1.8rem;      }
 .big-text           {   font-size: 4.5rem;      }
 
+.line-height-1      {   line-height: 0.8rem;      }
+
 
 .yellow             {   color: #FFBE00;         }
 .subtitle           {   font-size: 1rem;
@@ -122,20 +124,28 @@ a:hover {
 }
 
 /* --------------------------------- Background Images ----------------------------- */
-.bg-ryan-sofa-guitar     { background-image: url('/images/3Artists_Guitar.jpg');   }
+.bg-ryan-sofa-guitar     { 
+    background-image: url('/images/3Artists_Guitar.jpg');
+    background-color: rgba(25, 43, 55);
+   }
 
 .bg-br-abendschau        { 
         background-image: url('/images/BR_Videothek.jpg');  
         background-size: cover;
         background-position: 51% 100%;
+        background-color:#FFBE00;
     }
 
-.bg-only-human           {  background-image: url('/images/3Artists_Only_Human.jpg');
-                            background-position: 51% 39%;
+.bg-only-human           {  
+        background-image: url('/images/3Artists_Only_Human.jpg');
+        background-position: 51% 39%;
+        background-color: rgba(25, 43, 55);
                          }
 
-.bg-sofa-guitar         {   background-image: url('/images/3Artists_Sofa.jpg');     }
-
+.bg-sofa-guitar         {   
+    background-image: url('/images/3Artists_Sofa.jpg');
+    background-color: rgba(25, 43, 55);     
+}
 
 
 /*--------------------------------- Icon Grid ---------------------------------*/
