@@ -69,6 +69,7 @@ header {
     background-image: url('/images/Munich_Musicvideo1.jpg');
     background-size: cover;
     background-position: center;
+    background-color: rgba(25, 43, 55);
     color: rgb(255, 255, 255);
 }
 
