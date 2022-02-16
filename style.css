@@ -32,8 +32,9 @@ html {
 }
 
 /* Universal styles & utility classes */
-.padded     {   padding: 5%;    }
-.padded-1  {    padding: 1rem;  }
+.padded     {    padding: 5%;    }
+.padded-1   {    padding: 1rem;  }
+.padded-lg  {    padding: 10%;   }
 
 .bg-dark    {   background-color: #192B37;
                 color: white;
