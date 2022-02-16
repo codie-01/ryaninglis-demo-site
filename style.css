@@ -65,6 +65,11 @@ body {
 .subtitle           {   font-size: 1rem;
                         color: rgb(120,120,125);}
 
+.subtle           {     opacity: 0.5;   
+    margin-top: 3rem;
+    margin-bottom: 0;
+}
+
 /*--------------------------------- Header styles ---------------------------------*/
 
 header {
