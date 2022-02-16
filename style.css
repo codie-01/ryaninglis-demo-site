@@ -7,6 +7,7 @@
 }
 
 /* ----- Temporary styles for structural html -----------
+
 * {
     padding: 0.5rem;
     border: 1px solid rgb(225,225,225);}
@@ -49,6 +50,8 @@ html {
 .tall-90        { min-height: 90vh;     }
 .tall-100       { min-height: 100vh;    }
 
+.white-text     { color: white;       }
+
 
 
             /* Typography & Font Utility Classes */
@@ -57,11 +60,21 @@ html {
             font-family: 'Catamaran', sans-serif; 200, 400, 500, 800 --- */
 
 /* Catamaran Font */
-.bold-font           {  font-weight: 800;  }
-.light-font          {  font-weight: 200;  }
+.bold-font          {   font-weight: 800;   }
+.normal-font        {   font-weight: 500;   }
+.light-font         {   font-weight: 200;   }
+
+.xs-text            {   font-size: 1.5rem;  
+                        line-height: 1.6rem;}
+.small-text         {   font-size: 1.5rem;  }
+.medium-text        {   font-size: 1.8rem;  }
+.big-text           {   font-size: 4.5rem;  }
+
+.subtitle           {   font-size: 1rem;
+                        color: rgb(120,120,125);
+                    }
 
 .yellow             {   color: #FFBE00;}
-
 
 
 /* Header styles */
@@ -92,6 +105,7 @@ h1 {
  
 h3 {
     letter-spacing: 0.05em;
+    line-height: 1;
 }
 
 p {
@@ -108,7 +122,12 @@ p:last-child {
 
 /* ----------- Background Images ------------ */
 .bg-ryan-sofa-guitar     { background-image: url('/images/3Artists_Guitar.jpg');     }
-.bg-br-abendschau        { background-image: url('/images/BR_Videothek.jpg');        }
+
+.bg-br-abendschau        { 
+        background-image: url('/images/BR_Videothek.jpg');  
+        background-size: cover;
+        background-position: 51% 100%;
+    }
 
 .bg-only-human           {  background-image: url('/images/3Artists_Only_Human.jpg');
                             background-position: 51% 39%;
@@ -124,4 +143,11 @@ p:last-child {
     text-align: center;
     margin-bottom: 2rem;
     font-size: 3rem; 
+}
+
+.quote-icon    {
+    font-size: 5rem;
+    display: inline-block;
+    color: rgb(120,120,125);
+    line-height: 1;
 }
