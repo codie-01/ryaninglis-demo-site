@@ -42,6 +42,9 @@ html {
 .text-right     { text-align: right;    }
 .text-center    { text-align: center;   }
 
+.tall-50        { min-height: 50vh;     }
+.tall-60        { min-height: 60vh;     }
+.tall-70        { min-height: 70vh;     }
 .tall-80        { min-height: 80vh;     }
 .tall-90        { min-height: 90vh;     }
 .tall-100       { min-height: 100vh;    }
@@ -99,4 +102,26 @@ p {
 
 p:last-child {
     margin-bottom: 0;
+}
+
+
+
+/* ----------- Background Images ------------ */
+.bg-ryan-sofa-guitar     { background-image: url('/images/3Artists_Guitar.jpg');     }
+.bg-br-abendschau        { background-image: url('/images/BR_Videothek.jpg');        }
+
+.bg-only-human           {  background-image: url('/images/3Artists_Only_Human.jpg');
+                            background-position: 51% 39%;
+                         }
+
+.bg-sofa-guitar     { background-image: url('/images/3Artists_Sofa.jpg');       }
+
+
+
+/* Icon Grid */
+.fas {
+    display: block;
+    text-align: center;
+    margin-bottom: 2rem;
+    font-size: 3rem; 
 }
