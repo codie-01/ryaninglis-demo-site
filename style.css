@@ -6,11 +6,16 @@
     box-sizing: border-box;
 }
 
-/* ----- Temporary styles for structural html -----------
+[class*="grid-"], [class*="grid_"], [class~="grid"]{
+    margin:0;
+    }
+    
+
+/* ----- Temporary styles for structural html ----------- */
 * {
     padding: 0.5rem;
     border: 1px solid rgb(225,225,225);}
- ------------------------------------------------------ */
+ /* ------------------------------------------------------ */
 
 
 /* Universal styles & utility classes */
@@ -66,8 +71,6 @@ body {
                         color: rgb(120,120,125);}
 
 .subtle           {     opacity: 0.5;   
-    margin-top: 3rem;
-    margin-bottom: 0;
 }
 
 /*--------------------------------- Header styles ---------------------------------*/
@@ -96,6 +99,7 @@ h1 {
     background-color: rgba(25, 43, 55, 0.5);
   }
 
+
  
 h3 {
     letter-spacing: 0.05em;
@@ -119,6 +123,15 @@ a {
 
 a:hover {
     color:#FFBE00;
+}
+
+footer p {
+    padding-top: 5%;
+    padding-bottom: 0;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+}
 }
 
 /* --------------------------------- Image-Styles --------------------------------- */
